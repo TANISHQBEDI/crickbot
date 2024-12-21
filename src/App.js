@@ -14,7 +14,8 @@ function App() {
     if (input.startsWith("@ask-question")) {
       const question = input.replace("@ask-question", "").trim();
       try {
-        const response = await fetch("http://127.0.0.1:5000/ask-question", {
+        const response = await fetch("https://54b7-103-131-13-205.ngrok-free.app/ask-question", {
+        // const response = await fetch("http://127.0.0.1:5000/ask-question", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ question }),
