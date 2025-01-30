@@ -91,3 +91,25 @@
 .sendButton:hover {
   background-color: rgb(255, 62, 104);
 }
+
+.markdown-content {
+  overflow-x: auto;  /* Enable horizontal scrolling */
+  max-width: 100%;  /* Ensure it doesn't overflow parent container */
+}
+
+.markdown-content table {
+  width: 100%;  /* Ensures table takes full width */
+  min-width: 600px; /* Prevents column squishing */
+  border-collapse: collapse;
+}
+
+.markdown-content th,
+.markdown-content td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.markdown-content tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
